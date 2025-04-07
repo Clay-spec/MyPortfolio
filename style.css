@@ -1,0 +1,222 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #eaeaea; /* Lighter text for dark theme */
+  background: #121212; /* Dark background */
+  overflow-x: hidden; /* Prevent horizontal scrolling if any element is overflowing */
+}
+
+section {
+  margin: 0; /* Remove any margin from sections */
+  padding: 0; /* Remove any padding from sections */
+}
+
+/* Technologies Section */
+#technologies {
+  padding: 20px;
+  background-color: #000; /* Black background */
+  border: none; /* Remove border */
+  color: #f0a500; /* Gold text */
+  margin-bottom: 20px;
+}
+
+
+/* Container to center content */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Header & Navbar */
+header {
+  background: url('hero-background.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.8); /* Darker navbar */
+}
+
+.navbar .logo h1 {
+  font-size: 1.8rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f0a500; /* Gold color for links */
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #eaeaea; /* Lighter hover color */
+}
+
+/* Hero Section */
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #f0a500; /* Gold color for header */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #eaeaea; /* Lighter text color */
+}
+
+/* Sections */
+section {
+  padding: 4rem 0;
+  background: #1d1d1d; /* Dark background for sections */
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #f0a500; /* Gold color for section headers */
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: #333; /* Dark background for cards */
+  border: 1px solid #444; /* Darker border */
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-info {
+  padding: 1rem;
+  color: #eaeaea; /* Lighter text color */
+}
+
+.project-info h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-info p {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #f0a500; /* Gold color for buttons */
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #d18e00; /* Darker gold on hover */
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input, form textarea {
+  padding: 0.8rem;
+  border: 1px solid #444; /* Dark border for form elements */
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #2a2a2a; /* Dark background for form fields */
+  color: #eaeaea; /* Light text for form fields */
+}
+
+form button {
+  padding: 0.8rem;
+  border: none;
+  background: #f0a500; /* Gold button background */
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #d18e00; /* Darker gold on hover */
+}
+
+/* Footer */
+footer {
+  background: #333; /* Dark footer */
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.social-links a {
+  margin: 0 0.5rem;
+  color: #f0a500; /* Gold color for social links */
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero h2 {
+      font-size: 2.5rem;
+  }
+  
+  .hero p {
+      font-size: 1rem;
+  }
+}
